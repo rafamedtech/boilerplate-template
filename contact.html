@@ -26,12 +26,21 @@
           <span class="ml-3 text-xl">Boilerplate</span>
         </a>
         <nav
-          class="flex flex-wrap items-center justify-center text-base md:mr-auto md:ml-4 md:border-l md:border-gray-400 md:py-1 md:pl-4"
+          class="relative flex flex-wrap items-center justify-center text-base md:mr-auto md:ml-4 md:border-l md:border-gray-400 md:py-1 md:pl-4"
         >
-          <a href="#" class="mr-5 hover:text-primary">First Link</a>
-          <a href="#" class="mr-5 hover:text-primary">Second Link</a>
-          <a href="#" class="mr-5 hover:text-primary">Third Link</a>
+          <a href="#" class="mr-5 hover:text-primary">Blog</a>
           <a href="/contact.html" class="mr-5 hover:text-primary">Contact</a>
+
+          <!-- Dropdown Menu -->
+          <div class="group">
+            <button class="mr-5">Drop down</button>
+            <div
+              class="invisible absolute -right-20 -bottom-16 z-10 flex w-fit flex-col gap-2 border border-primary bg-white py-2 px-4 group-hover:visible"
+            >
+              <a href="#" class="hover:text-primary hover:underline">Terms & Conditions</a>
+              <a href="#" class="hover:text-primary hover:underline">Privacy Policy</a>
+            </div>
+          </div>
         </nav>
         <button
           class="mt-4 inline-flex items-center rounded border-0 bg-primary py-1 px-3 text-base text-white hover:bg-primary/75 focus:outline-none md:mt-0"
