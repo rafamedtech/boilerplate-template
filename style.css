@@ -7,3 +7,17 @@
     /* font-family: 'Open Sans', sans-serif; */
   }
 }
+
+@layer components {
+  .nav-active {
+    @apply bg-white;
+    z-index: 100;
+    border-bottom: 1px solid #e3e8ec;
+    transition: all 0.3s ease;
+  }
+
+  .nav-active .nav-container {
+    @apply py-2;
+    transition: all 0.3s ease;
+  }
+}
